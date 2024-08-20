@@ -1,0 +1,24 @@
+<mat-drawer-container
+  autosize
+  style="position: fixed; width: 100%; height: 100dvh"
+>
+  <mat-drawer #drawer mode="over" style="width: 200px">
+    <p>Auto-resizing sidenav</p>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <mat-toolbar style="position: sticky; top: 0">
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>NGRX</span>
+      <span style="flex: 1 1 auto"></span>
+      <button mat-icon-button>
+        <mat-icon>light_mode</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>person</mat-icon>
+      </button>
+    </mat-toolbar>
+  </mat-drawer-content>
+</mat-drawer-container>
